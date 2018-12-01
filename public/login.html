@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>login</title>
+    <title>Login</title>
 </head>
 <body>
-<label><b>Username</b></label>
-<input type="text" placeholder="Enter Username" name="uname" required>
-
-<label><b>Password</b></label>
-<input type="password" placeholder="Enter Password" name="psw" required>
-
-<button type="submit">Login</button>
+<form action="/node/login" method="post">
+    <input type="text" name="username" placeholder="johndoe">
+    <input type="password" name="password" placeholder="****">
+    <input type="submit" value="Login">
+</form>
 </body>
 </html>
+
