@@ -3,7 +3,7 @@ table of contents](TOC.md)
 
 # Usage
 
-Once you have cloned or downloaded HTML5 Boilerplate, creating a site or app
+Once you have cloned or downloaded HTML5 Boilerplate, creating a site or appOld
 usually involves the following:
 
 1. Set up the basic structure of the site.
@@ -26,7 +26,7 @@ A basic HTML5 Boilerplate site initially looks something like this:
 ├── doc
 ├── img
 ├── js
-│   ├── main.js
+│   ├── main-old.js
 │   ├── plugins.js
 │   └── vendor
 │       ├── jquery.min.js
@@ -105,7 +105,7 @@ corresponding snippet at the bottom to include your analytics ID.
 
 ### humans.txt
 
-Edit this file to include the team that worked on your site/app, and the
+Edit this file to include the team that worked on your site/appOld, and the
 technology powering it.
 
 ### robots.txt

@@ -4,11 +4,11 @@ How to run:
 
 `npm install`
 
-`node app.js`
+`node appOld-old.js`
 
 Open localhost:3000 in browser
 
-## Make a backend to the app in this repo
+## Make a backend to the appOld in this repo
 
 App features:
   * Add a form to upload data and image

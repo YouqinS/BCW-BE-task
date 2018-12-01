@@ -149,7 +149,7 @@ just put it before the other scripts in the bottom of the page:
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main-old.js"></script>
 </body>
 ```
 
@@ -168,7 +168,7 @@ maintains [a huge list of cross Browser polyfills](https://github.com/Modernizr/
 
 The central part of the boilerplate template is pretty much empty. This is
 intentional, in order to make the boilerplate suitable for both web page and
-web app development.
+web appOld development.
 
 ### Browser Upgrade Prompt
 

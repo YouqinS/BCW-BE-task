@@ -8,7 +8,7 @@ Boilerplate even better. We don't want to include it all by default, as
 not everything fits with everyone's needs.
 
 
-* [App Stores](#app-stores)
+* [App Stores](#appOld-stores)
 * [DNS prefetching](#dns-prefetching)
 * [Google Universal Analytics](#google-universal-analytics)
 * [Internet Explorer](#internet-explorer)
@@ -22,10 +22,10 @@ not everything fits with everyone's needs.
 
 ## App Stores
 
-### Install a Chrome Web Store app
+### Install a Chrome Web Store appOld
 
-Users can install a Chrome app directly from your website, as long as
-the app and site have been associated via Google's Webmaster Tools.
+Users can install a Chrome appOld directly from your website, as long as
+the appOld and site have been associated via Google's Webmaster Tools.
 Read more on [Chrome Web Store's Inline Installation
 docs](https://developer.chrome.com/webstore/inline_installation).
 
@@ -37,11 +37,11 @@ docs](https://developer.chrome.com/webstore/inline_installation).
 
 Stop bothering everyone with gross modals advertising your entry in the
 App Store. Include the following [meta tag](https://developer.apple.com/library/IOS/documentation/AppleApplications/Reference/SafariWebContent/PromotingAppswithAppBanners/PromotingAppswithAppBanners.html#//apple_ref/doc/uid/TP40002051-CH6-SW2)
-will unintrusively allow the user the option to download your iOS app,
+will unintrusively allow the user the option to download your iOS appOld,
 or open it with some data about the user's current state on the website.
 
 ```html
-<meta name="apple-itunes-app" content="app-id=APP_ID,app-argument=SOME_TEXT">
+<meta name="apple-itunes-appOld" content="appOld-id=APP_ID,appOld-argument=SOME_TEXT">
 ```
 
 ## DNS prefetching
@@ -333,9 +333,9 @@ blog](http://blogs.msdn.com/b/ie/archive/2012/06/08/high-quality-visuals-for-pin
 
 ### (Windows 8) Badges for Pinned Sites
 
-IE10 will poll an XML document for badge information to display on your app's
+IE10 will poll an XML document for badge information to display on your appOld's
 tile in the Start screen. The user will be able to receive these badge updates
-even when your app isn't actively running. The badge's value can be a number,
+even when your appOld isn't actively running. The badge's value can be a number,
 or one of a predefined list of glyphs.
 
 * [Tutorial on IEBlog with link to badge XML schema](http://blogs.msdn.com/b/ie/archive/2012/04/03/pinned-sites-in-windows-8.aspx)
@@ -401,7 +401,7 @@ plugin](https://www.google.com/search?ie=UTF-8&q=how+to+make+browser+search+plug
   results
   [visibility](http://googlewebmastercentral.blogspot.com/2009/05/introducing-rich-snippets.html).
 
-* If you're building a web app you may want [native style momentum scrolling in
+* If you're building a web appOld you may want [native style momentum scrolling in
   iOS 5+](http://www.johanbrook.com/articles/native-style-momentum-scrolling-to-arrive-in-ios-5/)
   using `-webkit-overflow-scrolling: touch`.
 
@@ -483,7 +483,7 @@ tutorial](https://developers.facebook.com/docs/opengraph/tutorial/).
 
 Twitter provides a snippet specification that serves a similar purpose to Open
 Graph. In fact, Twitter will use Open Graph when Cards is not available. Note
-that, as of this writing, Twitter requires that app developers activate Cards
+that, as of this writing, Twitter requires that appOld developers activate Cards
 on a per-domain basis. You can read more about the various snippet formats
 and application process in the [official Twitter Cards
 documentation](https://dev.twitter.com/docs/cards).
@@ -548,23 +548,23 @@ For more information please see:
 
 ## Web Apps
 
-There are a couple of meta tags that provide information about a web app when
+There are a couple of meta tags that provide information about a web appOld when
 added to the Home Screen on iOS:
 
-* Adding `apple-mobile-web-app-capable` will make your web app chrome-less and
-provide the default iOS app view. You can control the color scheme of the
-default view by adding `apple-mobile-web-app-status-bar-style`.
+* Adding `apple-mobile-web-appOld-capable` will make your web appOld chrome-less and
+provide the default iOS appOld view. You can control the color scheme of the
+default view by adding `apple-mobile-web-appOld-status-bar-style`.
 
   ```html
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-appOld-capable" content="yes">
+<meta name="apple-mobile-web-appOld-status-bar-style" content="black">
 ```
 
-* You can use `apple-mobile-web-app-title` to add a specific sites name for the
+* You can use `apple-mobile-web-appOld-title` to add a specific sites name for the
 Home Screen icon. This works since iOS 6.
 
   ```html
-<meta name="apple-mobile-web-app-title" content="">
+<meta name="apple-mobile-web-appOld-title" content="">
 ```
 
 For further information please read the [official
@@ -636,7 +636,7 @@ homescreen](https://developer.chrome.com/multidevice/android/installtohomescreen
 which tries to be a more generic replacement to Apple's proprietary meta tag:
 
 ```html
-<meta name="mobile-web-app-capable" content="yes">
+<meta name="mobile-web-appOld-capable" content="yes">
 ```
 
 Same applies to the touch icons:
