@@ -19,7 +19,7 @@ const fillUpdate = (image) => {
 
 
 const getImages = () => {
-    fetch('/images').then((response) => {
+    fetch('/node/images').then((response) => {
         return response.json();
     }).then((json) => {
         console.log(json);
@@ -83,7 +83,7 @@ const sendForm = (evt) => {
         body: fd,
     };
 
-    fetch('/upload', settings).then((response) => {
+    fetch('/node/upload', settings).then((response) => {
         return response.json();
     }).then((json) => {
         console.log(json);
@@ -104,7 +104,7 @@ const deleteImage = (imgSrc, imageID) =>{
     console.log(thumbnail);
     console.log(imageID);
 
-    fetch('/image/' + imageID, {method: 'DELETE'}).then((response) => {
+    fetch('/node/image/' + imageID, {method: 'DELETE'}).then((response) => {
         return response.json();
     }).then((json) => {
         console.log(json);
@@ -135,7 +135,7 @@ const updateImage = (imageID)=>{
 
     };
 
-    fetch('/images/' + imageID, settings).then((response) => {
+    fetch('/node/images/' + imageID, settings).then((response) => {
         return response.json();
     }).then((json) => {
         console.log(json);
@@ -158,7 +158,7 @@ const search = () =>{
     const settings = {
         method: 'GET'
     };
-    fetch(`/search/:${field}/:${searchText}`, settings).then((response) => {
+    fetch(`/node/search/:${field}/:${searchText}`, settings).then((response) => {
         return response.json();
     }).then((json) => {
         displaySearchResult(json);
@@ -173,14 +173,6 @@ searchForm.addEventListener('submit', (event) => {event.preventDefault(); search
 
 
 const displaySearchResult =(images) => {
-
-    //
-    // console.log('searching result...');
-    //
-    // fetch('/search').then((response) => {
-    //     return response.json();
-    //
-    // }).then((images) => {
 
         console.log(images);
 
@@ -206,9 +198,7 @@ const displaySearchResult =(images) => {
 
         })
 
-   // });
 };
-//document.querySelector('#searchButton').addEventListener('click', displaySearchResult);
 
 getImages();
 
