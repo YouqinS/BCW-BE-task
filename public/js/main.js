@@ -9,6 +9,16 @@ const aud = document.querySelector('#aud');
 const vid = document.querySelector('#vid');
 */
 
+//function that call updateImage()
+//this function is registered as a listener to the update form button
+var IMAGE_ID_TO_UPDATE = null
+const submitButtonOfUpdateForm = document.getElementById('submitUpdate');
+submitButtonOfUpdateForm.addEventListener('click', (evt)=>{
+    evt.preventDefault();
+    updateImage(IMAGE_ID_TO_UPDATE);
+});
+
+
 const fillUpdate = (image) => {
    // console.log(image);
     document.querySelector('#updateform input[name=title]').value = image.title;
@@ -65,12 +75,15 @@ const getImages = () => {
             btnUpdate.addEventListener('click', () => {
                 li.appendChild(updatefrm);
                 updatefrm.removeAttribute('hidden');
-                const btnSubmitUpdate = document.getElementById('submitUpdate');
-                 btnSubmitUpdate.addEventListener('click', (evt)=>{
-                     evt.preventDefault();
-                     updateImage(imgID);
-                     }); //updatefrm.style.visibility = 'hidden';
+                IMAGE_ID_TO_UPDATE = imgID;
+                 //updatefrm.style.visibility = 'hidden';
             });
+               // const btnFormSubmitUpdate = document.getElementById('submitUpdate');
+            //      btnSubmitUpdate.addEventListener('click', (evt)=>{
+            //          evt.preventDefault();
+            //          updateImage(imgID);
+            //          }); //updatefrm.style.visibility = 'hidden';
+            // });
         });
     });
 };
