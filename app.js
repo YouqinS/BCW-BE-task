@@ -43,7 +43,7 @@ app.use(session({
 passport.use(new LocalStrategy(
     (username, password, done) => {
         console.log('Here we go: ' + username);
-        if (username !== process.env.USR_NAME || password !== process.env.USR_PWD) { return done(null, false); }
+        if (username !== process.env.USR_NAME || password !== process.env.USR_PASS) { return done(null, false); }
         return done(null, { username: username } );
     }
 ));
