@@ -53,7 +53,7 @@ app.use(passport.session());
 
 
 app.post('/login',
-    passport.authenticate('local', { successRedirect: '/node/', failureRedirect: '/node/login.html' }));
+    passport.authenticate('local', { successRedirect: '/node/index.html', failureRedirect: '/node/login.html' }));
 
 app.set('trust proxy');
 const sslkey  = fs.readFileSync('/etc/pki/tls/private/ca.key');
